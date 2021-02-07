@@ -12,6 +12,8 @@
 		E996EF1425CCD712005BFD1B /* ReadingNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E996EF1325CCD712005BFD1B /* ReadingNote.swift */; };
 		E996EF1825CCD849005BFD1B /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E996EF1725CCD849005BFD1B /* RoundButton.swift */; };
 		E996EF1E25CCDDE6005BFD1B /* BetterSafariView in Frameworks */ = {isa = PBXBuildFile; productRef = E996EF1D25CCDDE6005BFD1B /* BetterSafariView */; };
+		E996EF5525CF7E77005BFD1B /* TabNoteData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E996EF5425CF7E77005BFD1B /* TabNoteData.swift */; };
+		E996EF5825CF861E005BFD1B /* NoteEntryAndList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E996EF5725CF861E005BFD1B /* NoteEntryAndList.swift */; };
 		E9DB420E25B859ED008DE9C2 /* ReaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DB420D25B859ED008DE9C2 /* ReaderApp.swift */; };
 		E9DB421025B859ED008DE9C2 /* Master.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DB420F25B859ED008DE9C2 /* Master.swift */; };
 		E9DB421225B859F5008DE9C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9DB421125B859F5008DE9C2 /* Assets.xcassets */; };
@@ -28,8 +30,10 @@
 /* Begin PBXFileReference section */
 		E996ECC425C4113C005BFD1B /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		E996ECC825C41514005BFD1B /* Vibration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibration.swift; sourceTree = "<group>"; };
-		E996EF1325CCD712005BFD1B /* ReadingNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReadingNote.swift; path = SupportingFiles/ReadingNote.swift; sourceTree = "<group>"; };
+		E996EF1325CCD712005BFD1B /* ReadingNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingNote.swift; sourceTree = "<group>"; };
 		E996EF1725CCD849005BFD1B /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		E996EF5425CF7E77005BFD1B /* TabNoteData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNoteData.swift; sourceTree = "<group>"; };
+		E996EF5725CF861E005BFD1B /* NoteEntryAndList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEntryAndList.swift; sourceTree = "<group>"; };
 		E9DB420A25B859ED008DE9C2 /* Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9DB420D25B859ED008DE9C2 /* ReaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderApp.swift; sourceTree = "<group>"; };
 		E9DB420F25B859ED008DE9C2 /* Master.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Master.swift; sourceTree = "<group>"; };
@@ -70,8 +74,24 @@
 			children = (
 				E9DB427D25C437AD008DE9C2 /* MotionManager.swift */,
 				E9DB422825B866AF008DE9C2 /* ArticleData.swift */,
+				E996EF5425CF7E77005BFD1B /* TabNoteData.swift */,
 			);
 			path = "ViewModel + Model";
+			sourceTree = "<group>";
+		};
+		E996EF5A25CF862D005BFD1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E9DB420F25B859ED008DE9C2 /* Master.swift */,
+				E9DB421D25B85C76008DE9C2 /* Row.swift */,
+				E9DB423425B90E02008DE9C2 /* Detail.swift */,
+				E996ECC425C4113C005BFD1B /* Setting.swift */,
+				E9DB428125C453C7008DE9C2 /* Locked.swift */,
+				E996EF1325CCD712005BFD1B /* ReadingNote.swift */,
+				E996EF1725CCD849005BFD1B /* RoundButton.swift */,
+				E996EF5725CF861E005BFD1B /* NoteEntryAndList.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		E9DB420125B859ED008DE9C2 = {
@@ -93,15 +113,9 @@
 		E9DB420C25B859ED008DE9C2 /* Reader */ = {
 			isa = PBXGroup;
 			children = (
+				E996EF5A25CF862D005BFD1B /* View */,
 				E996ECCC25C4152D005BFD1B /* ViewModel + Model */,
 				E996ECCB25C4151A005BFD1B /* Helper */,
-				E9DB420F25B859ED008DE9C2 /* Master.swift */,
-				E9DB421D25B85C76008DE9C2 /* Row.swift */,
-				E9DB423425B90E02008DE9C2 /* Detail.swift */,
-				E996ECC425C4113C005BFD1B /* Setting.swift */,
-				E9DB428125C453C7008DE9C2 /* Locked.swift */,
-				E996EF1325CCD712005BFD1B /* ReadingNote.swift */,
-				E996EF1725CCD849005BFD1B /* RoundButton.swift */,
 				E9DB422C25B86ED4008DE9C2 /* SupportingFiles */,
 				E9DB421625B859F5008DE9C2 /* Info.plist */,
 				E9DB421325B859F5008DE9C2 /* Preview Content */,
@@ -204,9 +218,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E996EF5525CF7E77005BFD1B /* TabNoteData.swift in Sources */,
 				E996EF1825CCD849005BFD1B /* RoundButton.swift in Sources */,
 				E996ECC925C41514005BFD1B /* Vibration.swift in Sources */,
 				E9DB428225C453C7008DE9C2 /* Locked.swift in Sources */,
+				E996EF5825CF861E005BFD1B /* NoteEntryAndList.swift in Sources */,
 				E9DB421025B859ED008DE9C2 /* Master.swift in Sources */,
 				E9DB421E25B85C76008DE9C2 /* Row.swift in Sources */,
 				E9DB423525B90E02008DE9C2 /* Detail.swift in Sources */,

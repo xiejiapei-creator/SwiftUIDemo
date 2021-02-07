@@ -16,8 +16,10 @@ struct ReadingNote: View
     {
         NavigationView
         {
-            ScrollView
+            VStack
             {
+                Spacer().frame(height: 20)
+                    
                 HStack
                 {
                     Link(destination: URL(string: "https://www.apple.com")!)
@@ -44,8 +46,11 @@ struct ReadingNote: View
                         .dismissButtonStyle(.close)
                     }
                 }
+                
+                NoteEntryAndList()
             }
         }
+        .navigationTitle("笔记")
     }
 }
 
@@ -57,4 +62,5 @@ struct ReadingNote_Previews: PreviewProvider
     }
 }
  
+
 
