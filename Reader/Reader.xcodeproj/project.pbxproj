@@ -25,6 +25,7 @@
 		E9DB423525B90E02008DE9C2 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DB423425B90E02008DE9C2 /* Detail.swift */; };
 		E9DB427E25C437AE008DE9C2 /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DB427D25C437AD008DE9C2 /* MotionManager.swift */; };
 		E9DB428225C453C7008DE9C2 /* Locked.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DB428125C453C7008DE9C2 /* Locked.swift */; };
+		E9ED594D25E742360066757E /* ImagePickerView in Frameworks */ = {isa = PBXBuildFile; productRef = E9ED594C25E742360066757E /* ImagePickerView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E996EF1E25CCDDE6005BFD1B /* BetterSafariView in Frameworks */,
+				E9ED594D25E742360066757E /* ImagePickerView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +162,7 @@
 			name = Reader;
 			packageProductDependencies = (
 				E996EF1D25CCDDE6005BFD1B /* BetterSafariView */,
+				E9ED594C25E742360066757E /* ImagePickerView */,
 			);
 			productName = Reader;
 			productReference = E9DB420A25B859ED008DE9C2 /* Reader.app */;
@@ -190,6 +193,7 @@
 			mainGroup = E9DB420125B859ED008DE9C2;
 			packageReferences = (
 				E996EF1C25CCDDE6005BFD1B /* XCRemoteSwiftPackageReference "BetterSafariView" */,
+				E9ED594B25E742360066757E /* XCRemoteSwiftPackageReference "ImagePickerView" */,
 			);
 			productRefGroup = E9DB420B25B859ED008DE9C2 /* Products */;
 			projectDirPath = "";
@@ -430,6 +434,14 @@
 				minimumVersion = 2.3.1;
 			};
 		};
+		E9ED594B25E742360066757E /* XCRemoteSwiftPackageReference "ImagePickerView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ralfebert/ImagePickerView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -437,6 +449,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E996EF1C25CCDDE6005BFD1B /* XCRemoteSwiftPackageReference "BetterSafariView" */;
 			productName = BetterSafariView;
+		};
+		E9ED594C25E742360066757E /* ImagePickerView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9ED594B25E742360066757E /* XCRemoteSwiftPackageReference "ImagePickerView" */;
+			productName = ImagePickerView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

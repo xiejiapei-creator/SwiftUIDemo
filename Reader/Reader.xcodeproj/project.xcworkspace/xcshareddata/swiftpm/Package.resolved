@@ -9,6 +9,15 @@
           "revision": "561919b490eddf8f999b0f855cbf237001cbfccd",
           "version": "2.3.1"
         }
+      },
+      {
+        "package": "ImagePickerView",
+        "repositoryURL": "https://github.com/ralfebert/ImagePickerView",
+        "state": {
+          "branch": null,
+          "revision": "b84dd1c85a65cddba40c89699cd63ba0cb248dbd",
+          "version": "0.5.0"
+        }
       }
     ]
   },
