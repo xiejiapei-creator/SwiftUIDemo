@@ -12,6 +12,8 @@ import LocalAuthentication
 struct ReaderApp: App
 {
     let motionManager = MotionManager()
+    let CloudDataManager = CloudData.shared
+    
     @State var locked = true
     
     var body: some Scene
@@ -33,6 +35,9 @@ struct ReaderApp: App
                             .tabItem { Label("阅读列表", systemImage: "books.vertical") }
                         ReadingNote()
                             .tabItem { Label("笔记", systemImage: "note.text") }
+                        CheckIn()
+                            .environment(\.managedObjectContext, CloudDataManager.container.viewContext)
+                            .tabItem { Label("签到", systemImage: "mappin.and.ellipse") }
                     }
 
                 }
@@ -58,6 +63,7 @@ struct ReaderApp: App
         }
     }
 }
+
 
 
 

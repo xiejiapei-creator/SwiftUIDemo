@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E92522052606F98900DC3ECA /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92522042606F98900DC3ECA /* Store.swift */; };
+		E92522092606FB5400DC3ECA /* Configuration.storekit in Resources */ = {isa = PBXBuildFile; fileRef = E92522082606FB5400DC3ECA /* Configuration.storekit */; };
+		E925220D2606FFCA00DC3ECA /* IAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = E925220C2606FFCA00DC3ECA /* IAP.swift */; };
+		E96955B525EFBD880078EEC2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96955B425EFBD880078EEC2 /* LocationManager.swift */; };
+		E96955B825EFC18F0078EEC2 /* CheckIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96955B725EFC18F0078EEC2 /* CheckIn.swift */; };
+		E96955BC25EFCA460078EEC2 /* Reader.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E96955BA25EFCA450078EEC2 /* Reader.xcdatamodeld */; };
+		E96955C025EFCC800078EEC2 /* CloudData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96955BF25EFCC800078EEC2 /* CloudData.swift */; };
+		E96955C625EFD8610078EEC2 /* CheckInRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96955C525EFD8610078EEC2 /* CheckInRow.swift */; };
 		E996ECC525C4113C005BFD1B /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E996ECC425C4113C005BFD1B /* Setting.swift */; };
 		E996ECC925C41514005BFD1B /* Vibration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E996ECC825C41514005BFD1B /* Vibration.swift */; };
 		E996EF1425CCD712005BFD1B /* ReadingNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E996EF1325CCD712005BFD1B /* ReadingNote.swift */; };
@@ -29,6 +37,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E92522042606F98900DC3ECA /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		E92522082606FB5400DC3ECA /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		E925220C2606FFCA00DC3ECA /* IAP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAP.swift; sourceTree = "<group>"; };
+		E96955B425EFBD880078EEC2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		E96955B725EFC18F0078EEC2 /* CheckIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckIn.swift; sourceTree = "<group>"; };
+		E96955BB25EFCA460078EEC2 /* CheckInModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CheckInModel.xcdatamodel; sourceTree = "<group>"; };
+		E96955BF25EFCC800078EEC2 /* CloudData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudData.swift; sourceTree = "<group>"; };
+		E96955C525EFD8610078EEC2 /* CheckInRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckInRow.swift; sourceTree = "<group>"; };
 		E996ECC425C4113C005BFD1B /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		E996ECC825C41514005BFD1B /* Vibration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibration.swift; sourceTree = "<group>"; };
 		E996EF1325CCD712005BFD1B /* ReadingNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingNote.swift; sourceTree = "<group>"; };
@@ -66,6 +82,8 @@
 		E996ECCB25C4151A005BFD1B /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				E92522042606F98900DC3ECA /* Store.swift */,
+				E92522082606FB5400DC3ECA /* Configuration.storekit */,
 				E996ECC825C41514005BFD1B /* Vibration.swift */,
 			);
 			path = Helper;
@@ -77,6 +95,9 @@
 				E9DB427D25C437AD008DE9C2 /* MotionManager.swift */,
 				E9DB422825B866AF008DE9C2 /* ArticleData.swift */,
 				E996EF5425CF7E77005BFD1B /* TabNoteData.swift */,
+				E96955B425EFBD880078EEC2 /* LocationManager.swift */,
+				E96955BF25EFCC800078EEC2 /* CloudData.swift */,
+				E96955BA25EFCA450078EEC2 /* Reader.xcdatamodeld */,
 			);
 			path = "ViewModel + Model";
 			sourceTree = "<group>";
@@ -92,6 +113,9 @@
 				E996EF1325CCD712005BFD1B /* ReadingNote.swift */,
 				E996EF1725CCD849005BFD1B /* RoundButton.swift */,
 				E996EF5725CF861E005BFD1B /* NoteEntryAndList.swift */,
+				E96955B725EFC18F0078EEC2 /* CheckIn.swift */,
+				E96955C525EFD8610078EEC2 /* CheckInRow.swift */,
+				E925220C2606FFCA00DC3ECA /* IAP.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -210,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E9DB421525B859F5008DE9C2 /* Preview Assets.xcassets in Resources */,
+				E92522092606FB5400DC3ECA /* Configuration.storekit in Resources */,
 				E9DB422225B86017008DE9C2 /* articles.json in Resources */,
 				E9DB421225B859F5008DE9C2 /* Assets.xcassets in Resources */,
 			);
@@ -224,7 +249,9 @@
 			files = (
 				E996EF5525CF7E77005BFD1B /* TabNoteData.swift in Sources */,
 				E996EF1825CCD849005BFD1B /* RoundButton.swift in Sources */,
+				E96955B525EFBD880078EEC2 /* LocationManager.swift in Sources */,
 				E996ECC925C41514005BFD1B /* Vibration.swift in Sources */,
+				E96955C625EFD8610078EEC2 /* CheckInRow.swift in Sources */,
 				E9DB428225C453C7008DE9C2 /* Locked.swift in Sources */,
 				E996EF5825CF861E005BFD1B /* NoteEntryAndList.swift in Sources */,
 				E9DB421025B859ED008DE9C2 /* Master.swift in Sources */,
@@ -232,10 +259,15 @@
 				E9DB423525B90E02008DE9C2 /* Detail.swift in Sources */,
 				E9DB427E25C437AE008DE9C2 /* MotionManager.swift in Sources */,
 				E996EF1425CCD712005BFD1B /* ReadingNote.swift in Sources */,
+				E96955C025EFCC800078EEC2 /* CloudData.swift in Sources */,
 				E9DB422925B866AF008DE9C2 /* ArticleData.swift in Sources */,
 				E996ECC525C4113C005BFD1B /* Setting.swift in Sources */,
+				E92522052606F98900DC3ECA /* Store.swift in Sources */,
+				E925220D2606FFCA00DC3ECA /* IAP.swift in Sources */,
+				E96955B825EFC18F0078EEC2 /* CheckIn.swift in Sources */,
 				E9DB420E25B859ED008DE9C2 /* ReaderApp.swift in Sources */,
 				E9DB422525B860C6008DE9C2 /* GroceryProduct.swift in Sources */,
+				E96955BC25EFCA460078EEC2 /* Reader.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +396,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Reader/Preview Content\"";
 				DEVELOPMENT_TEAM = MRMHT335N6;
 				ENABLE_PREVIEWS = YES;
@@ -373,7 +406,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jiapei.xie;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiapei.Reader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -386,6 +420,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Reader/Preview Content\"";
 				DEVELOPMENT_TEAM = MRMHT335N6;
 				ENABLE_PREVIEWS = YES;
@@ -395,7 +430,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jiapei.xie;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jiapei.Reader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -456,6 +492,19 @@
 			productName = ImagePickerView;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		E96955BA25EFCA450078EEC2 /* Reader.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E96955BB25EFCA460078EEC2 /* CheckInModel.xcdatamodel */,
+			);
+			currentVersion = E96955BB25EFCA460078EEC2 /* CheckInModel.xcdatamodel */;
+			path = Reader.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E9DB420225B859ED008DE9C2 /* Project object */;
 }
