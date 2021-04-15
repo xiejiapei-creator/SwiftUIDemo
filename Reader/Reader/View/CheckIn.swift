@@ -80,7 +80,7 @@ struct CheckIn: View
         let new = Entity(context: viewContext)
         new.timestamp = Date()
         new.longitude = locationManager.region.center.longitude
-        new.longitude = locationManager.region.center.latitude
+        new.latitude = locationManager.region.center.latitude
         try? viewContext.save()
     }
     
