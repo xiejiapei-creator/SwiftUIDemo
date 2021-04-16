@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import CoreHaptics
 
 struct IAP: View
 {
     @StateObject var store = Store()
+    @State var engine: CHHapticEngine?
     
     var body: some View
     {
@@ -64,6 +66,36 @@ struct IAP: View
         .onAppear
         {
             store.loadStoredPurchases()
+        }
+    }
+    
+    func createHaptics()
+    {
+        guard CHHapticEngine.capabilitiesForHardware().supportsHaptics else { return }
+        
+        do
+        {
+            engine = try CHHapticEngine()
+            try engine?.start()
+        }
+        catch
+        {
+            print(error.localizedDescription)
+        }
+    }
+    
+    func playHapticsFile(named filename: String)
+    {
+        guard let path = Bundle.main.path(forResource: filename, ofType: "ahap") else { return }
+
+        do
+        {
+            try engine?.start()
+            try engine?.playPattern(from: URL(fileURLWithPath: path))
+        }
+        catch
+        {
+            print("当播放AHAP文件的时候发生了错误，文件名为：\(filename)，错误信息为:\(error)")
         }
     }
 }
